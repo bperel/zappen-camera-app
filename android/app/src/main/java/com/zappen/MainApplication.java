@@ -2,15 +2,14 @@ package com.zappen;
 
 import android.app.Application;
 
-import com.facebook.react.ReactApplication;
-import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.RNFetchBlob.RNFetchBlobPackage;
-import com.lwansbrough.RCTCamera.RCTCameraPackage;
-import com.facebook.react.ReactInstanceManager;
+import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import org.reactnative.camera.RNCameraPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -29,7 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
             new RNDeviceInfo(),
             new RNFetchBlobPackage(),
-            new RCTCameraPackage()
+            new RNCameraPackage()
       );
     }
   };
